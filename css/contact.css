@@ -152,7 +152,7 @@ header .nav {
   color: #faa838;
 }
 /* -------------------------main section end------------------------ */
-/* -----------------------installations section start-------------------- */
+/* -----------------------assurance section start-------------------- */
 .assurance {
   display: flex;
   flex-direction: column;
@@ -189,7 +189,7 @@ header .nav {
   height: 150px;
 }
 
-/* -----------------------installations section start-------------------- */
+/* -----------------------assurance section end-------------------- */
 
 /* --------------------------form section start------------------- */
 .form {

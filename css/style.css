@@ -635,10 +635,19 @@ header .nav {
 }
 .blue-projects .content .container {
   display: flex;
+  width:100%;
   gap: 30px;
   padding: 20px 60px;
   text-align: center;
-  justify-content: center;
+  overflow:auto;
+  
+}
+
+@media(min-width:1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    min-width: 100% !important;
+    /* max-width: 1320px; */
+}
 }
 .blue-projects .content .container .project1 {
   background-image: url(../images/projects-img1.svg);
@@ -782,13 +791,14 @@ header .nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
+  
 }
 .article .content {
   background: #313c72;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 80px 0;
+  padding: 80px 60px;
 }
 .article .content h2 {
   font-size: 26px;
@@ -804,17 +814,27 @@ header .nav {
 }
 .article .content .container {
   display: flex;
-  gap: 40px;
+ gap: 30px;
 }
 
 .article .content .container .col1 {
   display: flex;
+  width: 70%;
+}
+.article .content .container .col1 .img{
+  width:46%;
+}
+.article .content .container .col1 .img img{
+  width: 100%;
 }
 .article .content .container .col1 .data {
-  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 70px;
   background-color: #fff;
   text-align: left;
   border-radius: 0px 20px 20px 0;
+  width: 50%;
 }
 .article .content .container .col1 .data h3 {
   font-size: 31px;
@@ -827,6 +847,7 @@ header .nav {
   font-size: 20px;
   font-weight: 400;
   color: #4a4a4a;
+  padding: 10px 0;
 }
 .article .content .container .col1 .data .btnWhite{
   width: 100%;
@@ -836,6 +857,12 @@ header .nav {
 .article .content .container .col1 .data .btnWhite a {
   margin-top: 20px;
 }
+.article .content .container .col2{
+  width: 32%;
+}
+.article .content .container .col2 img{
+  width: 100%;
+}
 
 /* ------------------article section end------------------------ */
 /* --------------------awards section start-------------------- */
@@ -844,6 +871,7 @@ header .nav {
   flex-direction: column;
   width: 100%;
   text-align: center;
+  padding: 0 60px;
 }
 .awards .content h2 {
   font-size: 26px;
@@ -863,6 +891,10 @@ header .nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0rem !important;
+  --bs-gutter-y: 0;
+}
 .awards .content .container .award {
   display: flex;
   flex-direction: column;
@@ -878,12 +910,7 @@ header .nav {
 .awards .content .container .award .data {
   padding: 20px 60px;
 }
-.awards .content .container .award .data1 {
-  padding: 20px 60px;
-}
-.awards .content .container .award .data2 {
-  padding: 20px 60px;
-}
+
 .awards .content .container .award p {
   font-size: 24px;
   font-weight: 600;
