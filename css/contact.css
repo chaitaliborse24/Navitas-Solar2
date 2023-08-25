@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* --------------utility classes-------------------------- */
+
+.btn a {
+  color: #313c72;
+  padding: 12px 25px;
+  background: #faa838;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn a:hover {
+  color: #faa838;
+  background-color: #313c72;
+  border: 2px solid #faa838;
+}
+.btnWhite {
+  display: inline-flex;
+  align-items: center;
+}
+.btnWhite a {
+  background-color: #faa838;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 3px;
+  gap: 10px;
+}
+.btnWhite a:hover {
+  background-color: #f6c279;
+}
+/* -----------------utility classes end----------------- */
+
+/* ----------------------header start--------------------- */
+header .nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 60px;
+  flex-wrap: nowrap;
+}
+.nav .left {
+  padding-right: 60px;
+}
+.nav .left img {
+  height: 158px;
+}
+.nav .right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.right .info {
+  background: url(../images/blue-rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 20px 80px;
+}
+
+.right .info .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.right .info p {
+  color: #fff;
+  padding-left: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+.right .info .btn {
+  margin-left: 20px;
+}
+
+.nav .right .nav-items ul {
+  display: flex;
+  padding: 20px 0;
+}
+.nav-items ul li {
+  list-style: none;
+  padding-left: 49px;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 450;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.nav-items ul li a.active {
+  color: #faa838;
+  background: none;
+  border-bottom: 2px solid #faa838;
+}
+.nav-items ul li img {
+  padding-left: 8px;
+}
+/* ---------------------header end-------------------- */
+/* -------------------main section start-------------------- */
+.main {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(49, 60, 114, 0.7) 22.6%,
+      rgba(49, 60, 114, 0) 69.65%
+    ),
+    url(../images/contact-bg-img.png),
+    lightgray -102px -516px / 114.167% 365.333% no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .content {
+  padding: 0 150px;
+}
+.main .content h1 {
+  color: #fff;
+  font-size: 54px;
+  font-weight: 700;
+}
+.main .content h2 {
+  color: #fff;
+  font-size: 29px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.main .content h2 span.orange {
+  color: #faa838;
+}
+/* -------------------------main section end------------------------ */
+/* -----------------------installations section start-------------------- */
+.assurance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0 20px 0;
+  position: relative;
+}
+.assurance h2 {
+  color: var(--blue, #313c72);
+  font-size: 27px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.assurance h1 {
+  color: #000;
+  font-size: 44px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.assurance > p {
+  color: #4f4f4f;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 350px;
+}
+.assurance .cloud {
+  position: absolute;
+  top: 25px;
+  left: 87%;
+}
+.assurance .cloud img {
+  width: 250px;
+  height: 150px;
+}
+
+/* -----------------------installations section start-------------------- */
+
+/* --------------------------form section start------------------- */
+.form {
+ position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ padding: 80px 0 100px 0;
+ margin-bottom: 220px;
+}
+.form form{
+  background: #fff;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.08);
+  padding: 40px 0;
+  width: 65%;
+  margin: 0 auto;
+  z-index: 50;
+}
+.form form input{
+  border-radius: 3px;
+  border: 1px solid #313c72;
+  padding: 18px 50px;
+  margin: 15px 15px 15px 15px;
+  width: 40%;
+}
+input,
+input::placeholder {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+}
+form textarea {
+  width: 83%;
+  height: 160px;
+  border-radius: 3px;
+  border: 1px solid #313c72;
+  padding: 18px 50px;
+  resize: none;
+  margin: 15px 7px 15px 7px;
+}
+.form form .btm{
+ border: 1px solid #313c72;
+  width: 83%;
+  margin: 20px auto;
+  padding: 40px 0;
+}
+.form form .btm h3{
+  text-align: left;
+  margin-left: 85px;
+}
+.form form .btnWhite{
+  width: 83%;
+  display: inline-block;
+}
+.form .blue-rect{
+  width: 100%;
+  position: absolute;
+  top:70%;
+  left:0;
+}
+.form .blue-rect img{
+  width: 100%;
+}
+.form .intersect{
+  position: absolute;
+  top:87.5%;
+  left:2%
+}
+.form .pinwing{
+  position: absolute;
+  top: 77%;
+  left: 52%;
+}
+
+/* ---------------------form section end--------------------- */
+
+/* ------------------footer start----------------------- */
+footer .content {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 120px 70px 0 70px;
+}
+footer .content .top {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  gap: 150px;
+}
+footer .content hr {
+  color: #fff;
+}
+footer .content .top .partA .logo {
+  display: flex;
+  padding-bottom: 30px;
+}
+footer .content .top .partA .logo p.first {
+  font-size: 36px;
+  color: #313c72;
+  font-weight: 600;
+}
+footer .content .top .partA .logo p.second {
+  font-size: 36px;
+  color: #faa838;
+  font-weight: 600;
+}
+footer .content .top .partA > p {
+  color: #d6d6d6;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+footer .content .top .partA .icons {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+footer .content .top .partA .icons .icon svg {
+  width: 29.55px;
+  height: 29.55px;
+}
+footer .content .top .partB {
+  color: #d6d6d6;
+}
+footer .content .top .partB h4 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+footer .content .top .partB .items p {
+  font-size: 22px;
+}
+
+footer .content .top .partC {
+  color: #d6d6d6;
+}
+footer .content .top .partC h4 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+footer .content .top .partC .items p {
+  font-size: 22px;
+}
+footer .content .top .partD .imgs {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+footer .content .bottom {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  color: #d6d6d6;
+  padding: 40px 100px;
+}
+footer .content .bottom {
+  font-size: 20px;
+}
+footer .content .bottom .right {
+  display: flex;
+  gap: 20px;
+}
+
+/* ---------------------footer end------------------------- */
