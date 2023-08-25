@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* --------------utility classes-------------------------- */
+
+.btn a {
+  color: #313c72;
+  padding: 12px 25px;
+  background: #faa838;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn a:hover {
+  color: #faa838;
+  background-color: #313c72;
+  border: 2px solid #faa838;
+}
+.btnWhite {
+  display: inline-flex;
+  align-items: center;
+}
+.btnWhite a {
+  background-color: #faa838;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 3px;
+  gap: 10px;
+}
+.btnWhite a:hover {
+  background-color: #f6c279;
+}
+/* -----------------utility classes end----------------- */
+
+/* ----------------------header start--------------------- */
+header .nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 60px;
+  flex-wrap: nowrap;
+}
+.nav .left {
+  padding-right: 60px;
+}
+.nav .left img {
+  height: 158px;
+}
+.nav .right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.right .info {
+  background: url(../images/blue-rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 20px 80px;
+}
+
+.right .info .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.right .info p {
+  color: #fff;
+  padding-left: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+.right .info .btn {
+  margin-left: 20px;
+}
+
+.nav .right .nav-items ul {
+  display: flex;
+  padding: 20px 0;
+}
+.nav-items ul li {
+  list-style: none;
+  padding-left: 49px;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 450;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.nav-items ul li a.active {
+  color: #faa838;
+  background: none;
+  border-bottom: 2px solid #faa838;
+}
+.nav-items ul li img {
+  padding-left: 8px;
+}
+/* ---------------------header end-------------------- */
+/* -------------------main section start-------------------- */
+.main {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(47, 65, 153, 0.7) 17.95%,
+      rgba(0, 0, 0, 0) 59.34%
+    ),
+    url(../images/esg-bg-img-1.png), lightgray 0px -304.059px / 100% 320.039%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .content {
+  padding: 0 150px;
+}
+.main .content h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+}
+.main .content h2 {
+  color: #fff;
+  font-size: 29px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.main .content h2 span.orange {
+  color: #faa838;
+}
+/* -------------------------main section end------------------------ */
+/* -----------------activities section start------------------------- */
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+.activities h2 {
+  color: var(--blue, #313c72);
+  font-size: 27px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.activities h1 {
+  color: #000;
+  font-size: 44px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.activities > p {
+  color: #4f4f4f;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 370px;
+}
+.activities .cloud {
+  position: absolute;
+  top: 25px;
+  left: 79%;
+}
+.activities .cloud img {
+  width: 400px;
+  height: 250px;
+}
+.activities .btnWhite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------------------activities section end--------------------- */
+/* --------------------development section start------------------------------ */
+.development {
+  display: flex;
+  justify-content: center;
+  padding:70px 130px 220px 130px ;
+  gap: 220px;
+}
+.development .left {
+  position: relative;
+}
+.development .left .img img {
+  width: 600px;
+  height: 380px;
+}
+.development .left .energyA {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 14.938px;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(20.540124893188477px);
+  position: absolute;
+  top: -90px;
+  left: 54%;
+}
+.development .left .energyA .energy-img {
+  border-radius: 34.856px 34.856px 34.856px 0px;
+  border: 0.622px solid var(--primary-blue, #0052b4);
+  background: var(--primary-blue, #0052b4);
+  box-shadow: 0px 11.826132774353027px 34.8559684753418px 0px
+    rgba(0, 82, 180, 0.16);
+  padding: 20px;
+}
+.development .left .energyA > p {
+  font-size: 18px;
+  color: #202636;
+  font-weight: 600;
+}
+.development .left .energyB {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 40px;
+  border-radius: 0px 14.938px 14.938px 0px;
+  background: rgba(0, 101, 219, 0.8);
+  backdrop-filter: blur(8.71399211883545px);
+  position: absolute;
+  top: 30%;
+  left: 100%;
+}
+.development .left .energyB .energy-img {
+  border-radius: 34.856px 34.856px 34.856px 0px;
+  background: var(--neutral-white, #fff);
+  box-shadow: 0px 11.826132774353027px 34.8559684753418px 0px
+    rgba(0, 44, 96, 0.16);
+    padding: 20px;
+}
+.development .left .energyB > p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.development .left .energyC{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 14.938px 0px 14.938px 14.938px;
+background: rgba(2, 29, 84, 0.90);
+backdrop-filter: blur(6.22428035736084px);
+position: absolute;
+top: 89%;
+left: 56%;
+
+}
+.development .left .energyC .energy-img {
+  border-radius: 34.856px 34.856px 34.856px 0px;
+  background: #fff;
+  box-shadow: 0px 11.826132774353027px 34.8559684753418px 0px rgba(92, 245, 255, 0.16);
+  padding: 20px;
+}
+.development .left .energyC > p{
+font-size: 18px;
+font-weight: 600;
+color: #fff;
+}
+.development .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.development .right h3{
+color: #000;
+font-size: 29px;
+font-weight: 600;
+}
+.development .right p{
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  }
+
+/* ---------------------------development section end-------------------- */
+/* --------------------------esg-blue section start----------- */
+.esg-blue{
+  display: flex;
+  padding: 200px 100px;
+  background: #313c72;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+}
+.esg-blue .left{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 70%;
+  border-radius: 15px;
+}
+.esg-blue .left .img{
+  width: 45%
+}
+
+.esg-blue .left .img img{
+  width:100%;
+  height:100%;
+}
+.esg-blue .left .data{
+  background-color: #fff;
+  padding: 80px 40px;
+  background-image: url(../images/esg-pinwing-img.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size:contain;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+}
+.esg-blue .left .data h4{
+  color: #272c45;
+  font-size: 33px;
+  line-height: normal;
+  font-weight: 600;
+  padding-right: 150px;
+}
+.esg-blue .left .data p{
+  color: #4a4a4a;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px 0;
+  padding-right:100px;
+}
+.esg-blue .left .data .btnWhite{
+width: 100%;
+display: inline-block;
+}
+.esg-blue .right{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  width: 30%;
+}
+.esg-blue .right .top img, .esg-blue .right .btm img{
+  width:100%;
+  height: 100%;
+  border-radius: 15px;
+}
+/* ----------------------esg-bluesection end----------------------- */
+/* -------------------goal section start--------------------------- */
+.goal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+}
+.goal h2{
+  color: #313c72;
+  font-size: 26px;
+  font-weight: 600;
+}
+.goal h1{
+  color: #000;
+  font-size: 41px;
+  font-weight: 700;
+  padding: 30px 0;
+}
+.goal .img{
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+}
+.goal .img img{
+  width: 100%;
+}
+/* ----------------------goal section end------------------------ */
+
+/* ------------------footer start----------------------- */
+footer .content {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 120px 70px 0 70px;
+}
+footer .content .top {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  gap: 150px;
+}
+footer .content hr {
+  color: #fff;
+}
+footer .content .top .partA .logo {
+  display: flex;
+  padding-bottom: 30px;
+}
+footer .content .top .partA .logo p.first {
+  font-size: 36px;
+  color: #313c72;
+  font-weight: 600;
+}
+footer .content .top .partA .logo p.second {
+  font-size: 36px;
+  color: #faa838;
+  font-weight: 600;
+}
+footer .content .top .partA > p {
+  color: #d6d6d6;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+footer .content .top .partA .icons {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+footer .content .top .partA .icons .icon svg {
+  width: 29.55px;
+  height: 29.55px;
+}
+footer .content .top .partB {
+  color: #d6d6d6;
+}
+footer .content .top .partB h4 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+footer .content .top .partB .items p {
+  font-size: 22px;
+}
+
+footer .content .top .partC {
+  color: #d6d6d6;
+}
+footer .content .top .partC h4 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+footer .content .top .partC .items p {
+  font-size: 22px;
+}
+footer .content .top .partD .imgs {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+footer .content .bottom {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  color: #d6d6d6;
+  padding: 40px 100px;
+}
+footer .content .bottom {
+  font-size: 20px;
+}
+footer .content .bottom .right {
+  display: flex;
+  gap: 20px;
+}
+
+/* ---------------------footer end------------------------- */
