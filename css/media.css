@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* --------------utility classes-------------------------- */
+
+.btn a {
+  color: #313c72;
+  padding: 12px 25px;
+  background: #faa838;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn a:hover {
+  color: #faa838;
+  background-color: #313c72;
+  border: 2px solid #faa838;
+}
+.btnWhite {
+  display: inline-flex;
+  align-items: center;
+}
+.btnWhite a {
+  background-color: #faa838;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 3px;
+  gap: 10px;
+}
+.btnWhite a:hover {
+  background-color: #f6c279;
+}
+/* -----------------utility classes end----------------- */
+
+/* ----------------------header start--------------------- */
+header .nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 60px;
+  flex-wrap: nowrap;
+}
+.nav .left {
+  padding-right: 60px;
+}
+.nav .left img {
+  height: 158px;
+}
+.nav .right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.right .info {
+  background: url(../images/blue-rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 20px 80px;
+}
+
+.right .info .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.right .info p {
+  color: #fff;
+  padding-left: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+.right .info .btn {
+  margin-left: 20px;
+}
+
+.nav .right .nav-items ul {
+  display: flex;
+  padding: 20px 0;
+}
+.nav-items ul li {
+  list-style: none;
+  padding-left: 49px;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 450;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.nav-items ul li a.active {
+  color: #faa838;
+  background: none;
+  border-bottom: 2px solid #faa838;
+}
+.nav-items ul li img {
+  padding-left: 8px;
+}
+/* ---------------------header end-------------------- */
+/* -------------------main section start-------------------- */
+.main {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(47, 65, 153, 0.7) 17.95%,
+      rgba(0, 0, 0, 0) 59.34%
+    ),
+    url(../images/media-bg-img.png), lightgray 0px -304.059px / 100% 320.039%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .content {
+  padding: 0 150px;
+}
+.main .content h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+}
+.main .content h2 {
+  color: #fff;
+  font-size: 29px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.main .content h2 span.orange {
+  color: #faa838;
+}
+/* -------------------------main section end------------------------ */
+/* -----------------------installations section start-------------------- */
+.installations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0 20px 0;
+  position: relative;
+}
+.installations h2 {
+  color: var(--blue, #313c72);
+  font-size: 27px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.installations h1 {
+  color: #000;
+  font-size: 44px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.installations > p {
+  color: #4f4f4f;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 350px;
+}
+.installations .cloud {
+  position: absolute;
+  top: 25px;
+  left: 79%;
+}
+.installations .cloud img {
+  width: 400px;
+  height: 250px;
+}
+
+/* -----------------------installations section end-------------------- */
+
+/* --------------------blue-projects section start------------------ */
+.blue-projects .content {
+  background: #313c72;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.blue-projects .content .container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.blue-projects .content .container .project1 {
+  background-image: url(../images/media-img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20% 8%;
+}
+.blue-projects .content .container .project2 {
+  background-image: url(../images/media-img2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20% 11%;
+}
+.blue-projects .content .container .project3 {
+  background-image: url(../images/media-img3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20% 11%;
+}
+.blue-projects .content .container .project4 {
+  background-image: url(../images/media-img4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20% 11%;
+}
+.blue-projects .content .container .project .data {
+  background-color: #fff;
+  border-left: 4px solid #faa838;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300%;
+}
+.blue-projects .content .container .project1 .data {
+  padding: 20px;
+  width: 150%;
+  position: relative;
+  top: 240px;
+  left: -44px;
+}
+.blue-projects .content .container .project2 .data {
+  padding: 20px;
+  width: 270%;
+  position: relative;
+  top: 240px;
+  left: -125px;
+}
+.blue-projects .content .container .project3 .data {
+  padding: 20px;
+  width: 260%;
+  position: relative;
+  top: 240px;
+  left: -100px;
+}
+.blue-projects .content .container .project4 .data {
+  padding: 20px;
+  width: 250%;
+  position: relative;
+  top: 240px;
+  left: -120px;
+}
+.project .data h2 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.blue-projects .content .container .project .data h3 {
+  color: #faa838;
+  font-weight: 600;
+  font-size: 16px;
+}
+.blue-projects .content .container .project1 .data .arrow {
+  position: absolute;
+  top: 56px;
+  left: 271px;
+  padding: 20px;
+  z-index: 10;
+}
+.blue-projects .content .container .project2 .data .arrow {
+  position: absolute;
+  top: 56px;
+  left: 320px;
+  padding: 20px;
+  z-index: 10;
+}
+.blue-projects .content .container .project3 .data .arrow {
+  position: absolute;
+  top: 56px;
+  left: 250px;
+  padding: 20px;
+  z-index: 10;
+}
+.blue-projects .content .container .project4 .data .arrow {
+  position: absolute;
+  top: 56px;
+  left: 312px;
+  padding: 20px;
+  z-index: 10;
+}
+/* ------------------footer start----------------------- */
+footer .content {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 120px 70px 0 70px;
+}
+footer .content .top {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  gap: 150px;
+}
+footer .content hr {
+  color: #fff;
+}
+footer .content .top .partA .logo {
+  display: flex;
+  padding-bottom: 30px;
+}
+footer .content .top .partA .logo p.first {
+  font-size: 36px;
+  color: #313c72;
+  font-weight: 600;
+}
+footer .content .top .partA .logo p.second {
+  font-size: 36px;
+  color: #faa838;
+  font-weight: 600;
+}
+footer .content .top .partA > p {
+  color: #d6d6d6;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+footer .content .top .partA .icons {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+footer .content .top .partA .icons .icon svg {
+  width: 29.55px;
+  height: 29.55px;
+}
+footer .content .top .partB {
+  color: #d6d6d6;
+}
+footer .content .top .partB h4 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+footer .content .top .partB .items p {
+  font-size: 22px;
+}
+
+footer .content .top .partC {
+  color: #d6d6d6;
+}
+footer .content .top .partC h4 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+footer .content .top .partC .items p {
+  font-size: 22px;
+}
+footer .content .top .partD .imgs {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+footer .content .bottom {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  color: #d6d6d6;
+  padding: 40px 100px;
+}
+footer .content .bottom {
+  font-size: 20px;
+}
+footer .content .bottom .right {
+  display: flex;
+  gap: 20px;
+}
+
+/* ---------------------footer end------------------------- */

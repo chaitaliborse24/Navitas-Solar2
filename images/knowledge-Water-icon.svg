@@ -1,0 +1,13 @@
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ic_Water">
+<mask id="mask0_91_5791" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="1" width="25" height="30">
+<g id="svgIDa">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M16.8225 29.2507C22.6619 29.2507 27.3951 24.5168 27.3951 18.6781C27.3951 10.088 16.8225 2.81934 16.8225 2.81934C16.8225 2.81934 6.25 10.088 6.25 18.6781C6.25 24.5175 10.9832 29.2507 16.8225 29.2507Z" fill="white" stroke="white" stroke-width="2.64313" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</mask>
+<g mask="url(#mask0_91_5791)">
+<path id="Vector_2" d="M0.961914 0.175781H32.6795V31.8934H0.961914V0.175781Z" fill="#0052B4"/>
+<path id="Vector_3" d="M16.8209 13.3916L14.1777 18.6779H19.464L16.8209 23.9641" stroke="white" stroke-width="2.64313" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
