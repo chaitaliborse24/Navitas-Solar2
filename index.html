@@ -8,13 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <!-- ----------css link-------------- -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- ------------------header start------------------------------ -->
     <header>
       <div class="nav">
         <div class="left">
@@ -45,34 +57,34 @@
           <div class="nav-items">
             <ul>
               <li>
-                <a href="#">Home</a>
-                <img src="./images/down-arrow.png" alt="" />
+                <a href="./index.html" class="active">Home</a>
+                <!-- <img src="./images/down-arrow.png" alt="" /> -->
               </li>
               <li>
-                <a href="#">Company</a
+                <a href="./about.html">Company</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
               <li>
-                <a href="#">Products & Services</a
+                <a href="./services.html">Products & Services</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
               <li>
-                <a href="#">Esg</a><img src="./images/down-arrow.png" alt="" />
+                <a href="./esg.html">Esg</a><img src="./images/down-arrow.png" alt="" />
               </li>
               <li>
-                <a href="#">Media</a
+                <a href="./media.html">Media</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
               <li>
-                <a href="#">Knowledge</a
+                <a href="./knowledge.html">Knowledge</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
               <li>
-                <a href="#">Contact</a
+                <a href="./contact.html">Contact</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
               <li>
-                <a href="#">Download Center</a
+                <a href="./download.html">Download Center</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
             </ul>
@@ -135,7 +147,7 @@
                 <img src="./images/Mask-group3.svg" alt="" />
               </div>
               <div class="img4">
-                <img src="./images/Mask-group1.svg" alt="" />
+                <img src="./images/Mask-group3.svg" alt="" />
               </div>
             </div>
           </div>
@@ -158,16 +170,18 @@
           <div class="img-front">
             <img src="./images/img1.svg" alt="" />
           </div>
-          <div class="cardWhite">
-            <div class="col">
-              <p>Efficiency</p>
-              <div class="btm">
-                <img src="./images/sun-icon.png" alt="" />
-                <p>85%</p>
+          <div>
+            <div class="cardWhite">
+              <div class="col">
+                <p>Efficiency</p>
+                <div class="btm">
+                  <img src="./images/sun-icon.png" alt="" />
+                  <p>85%</p>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <img src="./images/solar-icon.png" alt="" />
+              <div class="col">
+                <img src="./images/solar-icon.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -239,106 +253,662 @@
     <!-- ----------------products section end------------------- -->
     <!-- -------------------blue section start------------- -->
     <section class="blue">
-      <div class="slider">
-        <div class="slide fade">
-          <div class="left">
-            <h2>
-              Our Company Sees a World <br />
-              without Waste
-            </h2>
-            <p>
-              Lorem Ipsum is not simply random text. It has roots in a piece
-              <br />
-              of classical Latin literature from 45 BC, making it over 2000
-              <br />years old.Lorem Ipsum is not simply random text. It has
-              roots <br />
-              in a piece of classical Latin literature from 45 BC, making it
-              <br />
-              over 2000 years old.
-            </p>
-            <div class="btnWhite">
-              <a href="#">
-                See How It Works<img src="./images/arrow1.svg" alt="arrow"
-              /></a>
+      <div
+        id="carouselExampleDark"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" class="d-block w-100">
+            <div class="left">
+              <h2>
+                Our Company Sees a World <br />
+                without Waste
+              </h2>
+              <p>
+                Lorem Ipsum is not simply random text. It has roots in a piece
+                <br />
+                of classical Latin literature from 45 BC, making it over 2000
+                <br />years old.Lorem Ipsum is not simply random text. It has
+                roots <br />
+                in a piece of classical Latin literature from 45 BC, making it
+                <br />
+                over 2000 years old.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  See How It Works<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./images/video2.png" alt="" />
             </div>
           </div>
-          <div class="right">
-            <div class="img">
+          <div class="carousel-item" class="d-block w-100">
+            <div class="left">
+              <h2>
+                Our Company Sees a World <br />
+                without Waste
+              </h2>
+              <p>
+                Lorem Ipsum is not simply random text. It has roots in a piece
+                <br />
+                of classical Latin literature from 45 BC, making it over 2000
+                <br />years old.Lorem Ipsum is not simply random text. It has
+                roots <br />
+                in a piece of classical Latin literature from 45 BC, making it
+                <br />
+                over 2000 years old.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  See How It Works<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./images/video2.png" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item" class="d-block w-100">
+            <div class="left">
+              <h2>
+                Our Company Sees a World <br />
+                without Waste
+              </h2>
+              <p>
+                Lorem Ipsum is not simply random text. It has roots in a piece
+                <br />
+                of classical Latin literature from 45 BC, making it over 2000
+                <br />years old.Lorem Ipsum is not simply random text. It has
+                roots <br />
+                in a piece of classical Latin literature from 45 BC, making it
+                <br />
+                over 2000 years old.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  See How It Works<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="right">
               <img src="./images/video2.png" alt="" />
             </div>
           </div>
         </div>
-        <!-- <div class="slide fade">
-          <div class="left">
-            <h2>
-              Our Company Sees a World <br />
-              without Waste
-            </h2>
-            <p>
-              Lorem Ipsum is not simply random text. It has roots in a piece
-              <br />
-              of classical Latin literature from 45 BC, making it over 2000
-              <br />years old.Lorem Ipsum is not simply random text. It has
-              roots <br />
-              in a piece of classical Latin literature from 45 BC, making it
-              <br />
-              over 2000 years old.
-            </p>
-            <div class="btnWhite">
-              <a href="#">
-                See How It Works<img src="./images/arrow1.svg" alt="arrow"
-              /></a>
-            </div>
-          </div>
-          <div class="right">
-            <div class="img">
-              <img src="./images/video2.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="slide fade">
-          <div class="left">
-            <h2>
-              Our Company Sees a World <br />
-              without Waste
-            </h2>
-            <p>
-              Lorem Ipsum is not simply random text. It has roots in a piece
-              <br />
-              of classical Latin literature from 45 BC, making it over 2000
-              <br />years old.Lorem Ipsum is not simply random text. It has
-              roots <br />
-              in a piece of classical Latin literature from 45 BC, making it
-              <br />
-              over 2000 years old.
-            </p>
-            <div class="btnWhite">
-              <a href="#">
-                See How It Works<img src="./images/arrow1.svg" alt="arrow"
-              /></a>
-            </div>
-          </div>
-          <div class="right">
-            <div class="img">
-              <img src="./images/video2.png" alt="" />
-            </div>
-          </div>
-        </div> -->
-      
-
-        <br />
-        
-      </div>
-      <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a href="#" class="next" onclick="plusSlides(1)">&#10095;</a>
-      <div style="text-align: center" class="dotes">
-        <span class="dot" ></span>
-        <span class="dot" ></span>
-        <span class="dot" ></span>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
       </div>
     </section>
-    <!-- ------------------------blue section end------------------ -->
+    <!-- -------------------------blue section end--------------------- -->
+    <!-- -------------------------services section start----------------------- -->
+    <section class="services">
+      <div class="content">
+        <div class="col1">
+          <h2>Services</h2>
+          <h1>More Than A Solar Company</h1>
+          <p>
+            With over three decades of engineering & commissioning <br />
+            expertise from group companies in civil, heavy metal, power <br />
+            along with project finance & management, and a dedicated <br />
+            team of highly experienced industry veterans, we provide <br />
+            comprehensive services in renewable energy industry.
+          </p>
+          <div class="btnWhite">
+            <a href="#">
+              Read More<img src="./images/arrow1.svg" alt="arrow"
+            /></a>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="data">
+            <div class="icon">
+              <img src="./images/services-01-icon.png" alt="" />
+            </div>
+            <h4>01 SERVICE</h4>
+            <h3>EPC Service</h3>
+            <p>
+              We offer Renewable Energy EPC <br />
+              Service from residential rooftop to <br />
+              ground mount power <br />
+              generation projects.
+            </p>
+          </div>
+          <div class="img">
+            <img src="./images/service-img-01.png" alt="" />
+          </div>
+        </div>
+        <div class="col2">
+          <div class="data">
+            <div class="icon">
+              <img src="./images/services-02-icon.svg" alt="" />
+            </div>
+            <h4>02 SERVICE</h4>
+            <h3>RESCO Service</h3>
+            <p>
+              We generate renewable energy with <br />
+              capex & opex investments against <br />
+              installation space & long term sales <br />
+              contract.
+            </p>
+          </div>
+          <div class="img">
+            <img src="./images/service-img-02.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------services section end-------------------------- -->
+    <!-- -------------------------blue-projects section start---------------------- -->
+    <section class="blue-projects">
+      <div class="content">
+        <h2>EPC & RESCO</h2>
+        <h1>Notable Projects</h1>
+        <div class="container">
+          <div class="project project1">
+            <div class="data">
+              <h2>Pune,Maharashtra</h2>
+              <h3>111.89KW</h3>
+              <div class="arrow">
+                <img src="./images/project-arrow.svg" alt="" />
+              </div>
+              <div class="eclips">
+                <img src="./images/project-Eclips.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project project2">
+            <div class="data">
+              <h2>Surat,Gujrat</h2>
+              <h3>549.4KW</h3>
+              <div class="arrow">
+                <img src="./images/project-arrow.svg" alt="" />
+              </div>
+              <div class="eclips">
+                <img src="./images/project-Eclips.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project project3">
+            <div class="data">
+              <h2>Daman,Gujrat</h2>
+              <h3>53.6KW</h3>
+              <div class="arrow">
+                <img src="./images/project-arrow.svg" alt="" />
+              </div>
+              <div class="eclips">
+                <img src="./images/project-Eclips.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project project4">
+            <div class="data">
+              <h2>Panvel,Maharashtra</h2>
+              <h3>402KW</h3>
+              <div class="arrow">
+                <img src="./images/project-arrow.svg" alt="" />
+              </div>
+              <div class="eclips">
+                <img src="./images/project-Eclips.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------blue-projects section end---------------------- -->
+    <!-- ------------------------updates section start---------------------- -->
+    <section class="updates">
+      <div class="content">
+        <h2>Updates</h2>
+        <h1>News & Events</h1>
+        <div class="news">
+          <div class="events">
+            <div class="img">
+              <img src="./images/updates-img1.svg" alt="" />
+            </div>
+            <div class="data">
+              <h4>
+                Navitas Solar has done an MOU with S.R <br />
+                Luthra Institute of Management to <br />
+                strengthen Industry-Academia <br />
+                relationships.
+              </h4>
+              <p>
+                Navitas Solar has done an MOU with S.R Luthra Institute of
+                <br />
+                Management to strengthen Industry-Academia relationships.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  Read More<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="events">
+            <div class="img img2">
+              <img src="./images/updates-img2.svg" alt="" />
+            </div>
+            <div class="data">
+              <h4>
+                “India’s Biggest Startup Summit Season <br />
+                2” organized by 21By72 & lvy Growth <br />
+                Associated title sponsored by Navitas <br />
+                Solar at Avadh Utopia, Surat from 16.
+              </h4>
+              <p>
+                “India’s Biggest Startup Summit Season 2” oraganized by 21By72
+                <br />&.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  Read More<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------updates section end--------------------- -->
+    <!-- ----------------articles section start------------------ -->
+    <section class="article">
+      <div class="content">
+        <h2>Updates</h2>
+        <h1>Articles</h1>
+        <div class="container">
+          <div class="col1">
+            <div class="img">
+              <img src="./images/article-img1.png" alt="" />
+            </div>
+            <div class="data">
+              <h3>
+                Our Director and Co-Founder Mr. Aditya Singhania talks about
+                Solar Tracking System for PV Plants in a recent article
+                published by renewable Mirror Magazine -2023.
+              </h3>
+              <p>
+                Our Director and Co- Founder Mr. Aditya Singhania talks about
+                Solar.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  Read More<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <img src="./images/article-img2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------articles section end----------------- -->
+    <!-- -------------------------awards section start-------------------- -->
+    <section class="awards">
+      <div class="content">
+        <h2>Our Achievements</h2>
+        <h1>Awards & Recognitions</h1>
+        <div class="container">
+          <div class="award">
+            <div class="img">
+              <img src="./images/awards-img1.png" alt="" />
+            </div>
+            <div class="data">
+              <p>
+                Mr.Aditya Singhania, Director and Co-Founder, Navitas Solar, has
+                been awarded with the esteemed TECH EXCELLENCE AWARD FOR
+                EXCELLENCE.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  View More<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="award">
+            <div class="img">
+              <img src="./images/awards-img2.png" alt="" />
+            </div>
+            <div class="data1">
+              <p>
+                Navitas Solar has received “Green Gujarat Award 2023” by News 18
+                Gujarati. The award was presented by Shree Kanubhai Desai,
+                Gujarat Minister of.
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  View More<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="award">
+            <div class="img">
+              <img src="./images/awards-img3.png" alt="" />
+            </div>
+            <div class="data2">
+              <p>
+                Navitas Solar has received “Green Gujarat Award 2023” by News 18
+                Gujarati. The award was presented by Shree Kanubhai Desai,
+                Gujarat Minister of
+              </p>
+              <div class="btnWhite">
+                <a href="#">
+                  View More<img src="./images/arrow1.svg" alt="arrow"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------awards section end--------------------- -->
+    <!-- ---------------------contact-us section start------------------ -->
+    <section class="contact-us">
+      <div class="content">
+        <div class="left">
+          <div class="img">
+            <img src="./images/contact-us-image.svg" alt="" />
+          </div>
+          <div class="infos">
+            <div class="info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_196_4609)">
+                  <path
+                    d="M14.9909 14.7888C14.3938 15.1883 13.7002 15.3995 12.9851 15.3995C12.2701 15.3995 11.5765 15.1883 10.9794 14.7888L1.1449 8.20848C1.09061 8.17205 1.03733 8.13413 0.985107 8.09477L0.985107 18.8774C0.985107 20.1136 1.98472 21.0947 3.19447 21.0947H22.7757C24.0075 21.0947 24.9851 20.0915 24.9851 18.8774V8.09473C24.9328 8.13419 24.8794 8.17219 24.825 8.20867L14.9909 14.7888Z"
+                    fill="#0052B4"
+                  />
+                  <path
+                    d="M1.92495 8.09851L11.7595 14.7188C12.1317 14.9694 12.5584 15.0947 12.9851 15.0947C13.4118 15.0947 13.8385 14.9694 14.2107 14.7188L24.0453 8.09851C24.6338 7.70259 24.9851 7.03996 24.9851 6.3248C24.9851 5.09511 23.9943 4.09473 22.7765 4.09473H3.19372C1.97591 4.09477 0.985109 5.09515 0.985109 6.32598C0.984743 6.6768 1.07037 7.02226 1.23436 7.33154C1.39835 7.64082 1.6356 7.90431 1.92495 8.09851Z"
+                    fill="#0052B4"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_196_4609">
+                    <rect
+                      width="24.6766"
+                      height="24.6766"
+                      fill="white"
+                      transform="translate(0.338379 0.308594)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>albertjohns@gmail.com</p>
+            </div>
+            <div class="info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+              >
+                <path
+                  d="M22.9586 17.7348V20.8194C22.9597 21.1057 22.9011 21.3892 22.7864 21.6515C22.6716 21.9139 22.5034 22.1494 22.2924 22.343C22.0814 22.5366 21.8323 22.684 21.561 22.7757C21.2897 22.8674 21.0023 22.9015 20.7171 22.8757C17.5532 22.532 14.514 21.4508 11.8438 19.7192C9.35953 18.1406 7.25328 16.0343 5.67466 13.55C3.93699 10.8677 2.85561 7.81374 2.51811 4.6356C2.49242 4.35127 2.52621 4.06471 2.61733 3.79416C2.70846 3.5236 2.85492 3.27498 3.04739 3.06413C3.23986 2.85329 3.47413 2.68482 3.73528 2.56947C3.99642 2.45412 4.27873 2.39441 4.56421 2.39414H7.64879C8.14778 2.38923 8.63153 2.56593 9.00987 2.89131C9.38822 3.21668 9.63534 3.66853 9.70518 4.16263C9.83537 5.14977 10.0768 6.119 10.4249 7.05186C10.5632 7.41987 10.5932 7.81983 10.5112 8.20434C10.4292 8.58885 10.2387 8.94179 9.96223 9.22134L8.65642 10.5271C10.1201 13.1013 12.2514 15.2326 14.8256 16.6963L16.1314 15.3905C16.4109 15.1141 16.7639 14.9235 17.1484 14.8415C17.5329 14.7595 17.9329 14.7895 18.3009 14.9278C19.2337 15.2759 20.203 15.5174 21.1901 15.6475C21.6896 15.718 22.1457 15.9696 22.4718 16.3544C22.7978 16.7393 22.9711 17.2305 22.9586 17.7348Z"
+                  fill="#0052B4"
+                />
+              </svg>
+              <p>+64 1233 4567 890</p>
+            </div>
+            <div class="info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.6766 24.3405C12.6766 24.3405 21.9303 18.1713 21.9303 10.9739C21.9303 8.51971 20.9554 6.16598 19.22 4.43057C17.4846 2.69516 15.1308 1.72021 12.6766 1.72021C10.2223 1.72021 7.86862 2.69516 6.13321 4.43057C4.3978 6.16598 3.42285 8.51971 3.42285 10.9739C3.42285 18.1713 12.6766 24.3405 12.6766 24.3405ZM15.7612 10.9739C15.7612 12.6775 14.3802 14.0585 12.6766 14.0585C10.973 14.0585 9.59201 12.6775 9.59201 10.9739C9.59201 9.27038 10.973 7.88937 12.6766 7.88937C14.3802 7.88937 15.7612 9.27038 15.7612 10.9739Z"
+                  fill="#0052B4"
+                />
+              </svg>
+              <p>George Street Huntingdon,  <br>United Kingdom</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <h2>Contact Us</h2>
+          <p>
+            The Big Oxmox advised her not to do so, because there were thousands of <br> bad Commas, wild Question Marks and devious Semikoli.
+          </p>
+          <form action="#">
+            <input type="text" placeholder="Your Name" /> 
+            <input type="text" placeholder="Your Email Address" />
+            <br>
+            <textarea name="question" id="question" cols="50" rows="6">
+              Question
+            </textarea>
+            <br>
+            <div class="btnWhite">
+              <a href="#">
+                View More<img src="./images/arrow1.svg" alt="arrow"
+              /></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------contact-us section end------------------ -->
+    <!-- ------------------------------puc section start---------------- -->
+    <section class="puc">
+      <div class="content">
+        <h2>Projects</h2>
+        <h1>PUC & Government</h1>
+        <div class="logos">
+          <div class="logo">
+            <img src="./images/puc-gail.png" alt="">
+          </div>
+          <div class="logo">
+            <img src="./images/puc-hp.png" alt="">
+          </div>
+          <div class="logo">
+            <img src="./images/puc-io.png" alt="">
+          </div>
+          <div class="logo">
+            <img src="./images/puc-nhdc.png" alt="">
+          </div>
+          <div class="logo">
+            <img src="./images/puc-npcil.png" alt="">
+          </div>
+          <div class="logo">
+            <img src="./images/puc-ongc.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------puc section end------------------------- -->
+    <!-- ----------------------footer srart-------------------------------------- -->
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="partA">
+            <div class="logo">
+             <p class="first">Navitas</p>
+             <p class="second">Solar</p>
+            </div>
+            <p>Navitas Solar is a registered <br> trademark of Navitas Green <br>Solutions Pvt. Ltd.</p>
+            <div class="icons">
+             <div class="icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                 <circle cx="14.775" cy="14.775" r="14.3646" stroke="white" stroke-width="0.820833"/>
+                 <path d="M15.8749 21.919V15.2911H18.0485L18.3746 12.7073H15.8749V11.0579C15.8749 10.3101 16.077 9.80045 17.1264 9.80045L18.4625 9.79989V7.48886C18.2315 7.45813 17.4383 7.3877 16.5151 7.3877C14.5873 7.3877 13.2676 8.59159 13.2676 10.802V12.7073H11.0874V15.2911H13.2676V21.919H15.8749Z" fill="white"/>
+               </svg>
+             </div>
+             <div class="icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                 <circle cx="15.6375" cy="14.775" r="14.3646" stroke="white" stroke-width="0.820833"/>
+                 <path d="M22.2041 21.3413V16.5313C22.2041 14.1673 21.6952 12.3614 18.9372 12.3614C17.6075 12.3614 16.721 13.0838 16.3598 13.7733H16.327V12.5748H13.7167V21.3413H16.4419V16.9909C16.4419 15.8418 16.6553 14.7418 18.0671 14.7418C19.4626 14.7418 19.479 16.0388 19.479 17.0566V21.3249H22.2041V21.3413ZM9.28422 12.5748H12.0094V21.3413H9.28422V12.5748ZM10.6468 8.20801C9.77672 8.20801 9.0708 8.91392 9.0708 9.78401C9.0708 10.6541 9.77672 11.3764 10.6468 11.3764C11.5169 11.3764 12.2228 10.6541 12.2228 9.78401C12.2228 8.91392 11.5169 8.20801 10.6468 8.20801Z" fill="white"/>
+               </svg>
+             </div>
+             <div class="icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                 <circle cx="15.5001" cy="14.775" r="14.3646" stroke="white" stroke-width="0.820833"/>
+                 <path d="M23.6001 10.8284C23.411 10.1253 22.8566 9.57103 22.1536 9.38169C20.8692 9.03027 15.7317 9.03027 15.7317 9.03027C15.7317 9.03027 10.5943 9.03027 9.30994 9.36838C8.62042 9.55751 8.05253 10.1254 7.86339 10.8284C7.52539 12.1127 7.52539 14.7761 7.52539 14.7761C7.52539 14.7761 7.52539 17.453 7.86339 18.7238C8.05271 19.4268 8.6069 19.9811 9.31004 20.1704C10.6078 20.5219 15.7319 20.5219 15.7319 20.5219C15.7319 20.5219 20.8692 20.5219 22.1536 20.1838C22.8567 19.9946 23.411 19.4403 23.6003 18.7373C23.9382 17.4529 23.9382 14.7896 23.9382 14.7896C23.9382 14.7896 23.9517 12.1127 23.6001 10.8284ZM14.0959 17.2367V12.3155L18.3681 14.7761L14.0959 17.2367Z" fill="white"/>
+               </svg>
+             </div>
+             <div class="icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                 <path d="M23.6968 9.76279C23.0957 10.0265 22.4552 10.2012 21.7874 10.2861C22.4744 9.87594 22.9987 9.2314 23.2452 8.45451C22.6047 8.83639 21.8976 9.10613 21.1439 9.25665C20.5357 8.60908 19.6689 8.20801 18.7233 8.20801C16.8887 8.20801 15.4117 9.69713 15.4117 11.5227C15.4117 11.7853 15.4339 12.0379 15.4885 12.2783C12.7335 12.144 10.2958 10.8236 8.65814 8.81214C8.37224 9.30818 8.20454 9.87594 8.20454 10.4871C8.20454 11.6348 8.79554 12.6521 9.67648 13.2411C9.14407 13.231 8.62177 13.0764 8.17928 12.833V12.8693C8.17928 14.4797 9.32794 15.8173 10.8342 16.1254C10.5645 16.1991 10.2705 16.2345 9.96541 16.2345C9.75326 16.2345 9.53908 16.2224 9.33804 16.1779C9.7674 17.4902 10.9858 18.455 12.4345 18.4864C11.307 19.3683 9.8755 19.8997 8.32577 19.8997C8.05401 19.8997 7.79336 19.8876 7.53271 19.8542C9.00062 20.8009 10.7403 21.3413 12.6163 21.3413C18.7142 21.3413 22.0481 16.2901 22.0481 11.9116C22.0481 11.7651 22.043 11.6237 22.036 11.4833C22.6936 11.0165 23.2462 10.4336 23.6968 9.76279Z" fill="white"/>
+                 <circle cx="15.3624" cy="14.775" r="14.3646" stroke="white" stroke-width="0.820833"/>
+               </svg>
+             </div>
+             <div class="icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                 <circle cx="15.225" cy="14.775" r="14.3646" stroke="white" stroke-width="0.820833"/>
+                 <path d="M22.5721 11.7316C22.5374 10.9465 22.4105 10.4068 22.2286 9.93914C22.041 9.44272 21.7524 8.99829 21.3743 8.62881C21.0048 8.25359 20.5574 7.96201 20.0667 7.77735C19.5963 7.59551 19.0594 7.46851 18.2744 7.43393C17.4834 7.39635 17.2324 7.3877 15.2264 7.3877C13.2204 7.3877 12.9693 7.39635 12.1813 7.43099C11.3963 7.46563 10.8565 7.59268 10.389 7.7744C9.89243 7.96201 9.448 8.25065 9.07852 8.62881C8.7033 8.99826 8.41187 9.44564 8.22706 9.93631C8.04522 10.4068 7.91825 10.9436 7.88364 11.7287C7.84609 12.5196 7.8374 12.7707 7.8374 14.7767C7.8374 16.7827 7.84609 17.0338 7.8807 17.8217C7.91533 18.6068 8.04239 19.1465 8.22426 19.6142C8.41187 20.1106 8.7033 20.555 9.07852 20.9245C9.448 21.2997 9.89538 21.5913 10.386 21.776C10.8565 21.9578 11.3933 22.0848 12.1785 22.1194C12.9664 22.1542 13.2176 22.1627 15.2236 22.1627C17.2296 22.1627 17.4806 22.1542 18.2686 22.1194C19.0537 22.0848 19.5934 21.9579 20.061 21.776C20.552 21.5861 20.998 21.2957 21.3703 20.9235C21.7426 20.5512 22.033 20.1052 22.2229 19.6142C22.4046 19.1437 22.5317 18.6068 22.5663 17.8217C22.6009 17.0338 22.6096 16.7827 22.6096 14.7767C22.6096 12.7707 22.6067 12.5196 22.5721 11.7316ZM21.2415 17.764C21.2097 18.4856 21.0885 18.8752 20.9875 19.135C20.7392 19.7787 20.2284 20.2895 19.5847 20.5378C19.3249 20.6388 18.9325 20.76 18.2137 20.7917C17.4344 20.8264 17.2007 20.835 15.2293 20.835C13.2579 20.835 13.0213 20.8264 12.2448 20.7917C11.5232 20.76 11.1335 20.6388 10.8738 20.5378C10.5535 20.4194 10.2619 20.2318 10.0253 19.9865C9.77992 19.7469 9.59231 19.4583 9.47392 19.1379C9.37289 18.8782 9.2517 18.4856 9.22003 17.7669C9.18528 16.9876 9.17674 16.7538 9.17674 14.7824C9.17674 12.811 9.18528 12.5744 9.22003 11.798C9.2517 11.0764 9.37289 10.6868 9.47392 10.427C9.59231 10.1066 9.77992 9.81509 10.0282 9.57835C10.2677 9.33302 10.5563 9.1454 10.8767 9.02715C11.1365 8.92613 11.5291 8.80491 12.2477 8.77313C13.027 8.73849 13.2609 8.72983 15.2321 8.72983C17.2064 8.72983 17.4402 8.73849 18.2167 8.77313C18.9382 8.80493 19.3279 8.9261 19.5877 9.02712C19.908 9.1454 20.1995 9.33302 20.4362 9.57835C20.6815 9.81795 20.8691 10.1066 20.9875 10.427C21.0885 10.6868 21.2097 11.0792 21.2415 11.798C21.2762 12.5773 21.2848 12.811 21.2848 14.7824C21.2848 16.7538 21.2762 16.9847 21.2415 17.764Z" fill="white"/>
+                 <path d="M15.2262 10.981C13.1308 10.981 11.4307 12.6809 11.4307 14.7765C11.4307 16.872 13.1308 18.572 15.2262 18.572C17.3216 18.572 19.0217 16.872 19.0217 14.7765C19.0217 12.6809 17.3216 10.981 15.2262 10.981ZM15.2262 17.2385C13.8668 17.2385 12.7641 16.136 12.7641 14.7765C12.7641 13.4169 13.8668 12.3144 15.2261 12.3144C16.5857 12.3144 17.6882 13.4169 17.6882 14.7765C17.6882 16.136 16.5856 17.2385 15.2262 17.2385ZM20.0579 10.8309C20.0579 11.3202 19.6611 11.717 19.1717 11.717C18.6824 11.717 18.2856 11.3202 18.2856 10.8309C18.2856 10.3415 18.6824 9.94482 19.1717 9.94482C19.6611 9.94482 20.0579 10.3414 20.0579 10.8309Z" fill="white"/>
+               </svg>
+             </div>
+            </div>
+         </div>
+         <div class="partB">
+              <h4>Products & Services</h4>
+               <div class="items">
+                 <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                   <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg> Solar EPC</p>
+                 <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                   <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg> EVA Sheets</p>
+                 <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                   <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg> Solar RESCO</p>
+                 <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                   <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg> Solar Panels</p>
+               </div>
+         </div>
+         <div class="partC">
+             <h4>Useful Link</h4>
+             <div class="items">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                 <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg> Home</p>
+               <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                 <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg> Awards</p>
+               <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                 <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg> Services</p>
+               <p><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                 <path d="M1 1.5L6 6.5L1 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg> Pricing Plan</p>
+             </div>
+         </div>
+         <div class="partD">
+               <div class="imgs">
+                 <div class="img">
+                   <img src="./images/footer-img1.png" alt="">
+                 </div>
+                 <div class="img">
+                     <img src="./images/footer-img2.png" alt="">
+                 </div>
+                 <div class="img">
+                   <img src="./images/footer-img3.png" alt="">
+                 </div>
+               </div>
+               <div class="imgs">
+                 <div class="img">
+                   <img src="./images/footer-img4.png" alt="">
+                 </div>
+                 <div class="img">
+                   <img src="./images/footer-img5.png" alt="">
+                 </div>
+                 <div class="img">
+                   <img src="./images/footer-img6.png" alt="">
+                 </div>
+               </div>
+         </div>
+        </div>
+        <hr>
+        <div class="bottom">
+          <div class="left">
+            <p> Copyright ©2022 </p>
+          </div>
+          <div class="right">
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Policy and Cookie Policy</p>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+    <!-- ----------------------------footer end------------------------ -->
+
     <!-- ------------------------------js flie link---------------------------- -->
-    <script src="./script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
