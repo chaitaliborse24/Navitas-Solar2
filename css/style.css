@@ -146,8 +146,52 @@ header .nav {
   background: none;
   border-bottom: 2px solid #faa838;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: #fe8900;
+}
 .nav-items ul li img {
   padding-left: 8px;
+}
+.nav .menu-btn i{
+  color: #fff;
+  font-size: 24px;
+  cursor:pointer;
+  display: none;
+}
+/* #click{
+  display:none;
+} */
+@media (max-width:940px) {
+  /* .nav .right .nav-items ul {
+    position: fixed;
+    top: 80px;
+    left:-100%;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ .menu-btn i :before{
+    content: "/f00d";
+  }
+  #click:checked ~ ul{
+    left: 0%;
+  }
+  .nav .right .nav-items ul li{
+    margin: 40px 0;
+    display: block;
+  }
+  .nav .right .nav-items ul a{
+    font-size: 20px;
+  }
+  .nav .menu-btn i {
+    display: block;
+  } */
+  .nav .right .info{
+    display: none;
+  }
 }
 /* ---------------------header end-------------------- */
 /* -------------------solutions section start----------------- */
@@ -357,6 +401,20 @@ header .nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media (max-width:940px){
+  .solutions .content{
+    padding-top: 40px;
+  padding-bottom: 110px;
+  gap:10px;
+  }
+  .solutions .content .line1 {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 100px;
+    z-index: 1;
+  }
 }
 /* -------------------solutions section end------------ */
 /* -------------------products section start---------------- */
@@ -584,6 +642,12 @@ header .nav {
   color: #4f4f4f;
   padding: 20px 0;
 }
+.services .content .col2{
+  border-radius: 15px;
+background: #FFF;
+box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.06);
+position: relative;
+}
 .services .content .col2 .data {
   padding: 30px;
 }
@@ -611,6 +675,19 @@ header .nav {
 }
 .services .content .col2 .img img {
   width: 100%;
+  
+}
+.services .content .col2 .arrow{
+  background-color: #313c72;
+  width: 38px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  top: 59%;
+  left: 10%;
 }
 /* --------------------services section end--------------------- */
 /* --------------------blue-projects section start------------------ */

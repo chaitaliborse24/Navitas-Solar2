@@ -22,16 +22,30 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!-- ----------------font awesome link------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- ----------css link-------------- -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- ------------------header start------------------------------ -->
-    <header>
-      <div class="nav">
-        <div class="left">
+    <header class="container-fluid">
+      <div class="nav navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+        
+        <!-- <input type="checkbox" id="check"> -->
+        <!-- <label for="check" class="checkbtn"></label> -->
+        <div class="left navbar-brand">
           <img src="./images/logo.png" alt="" />
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </label> -->
         <div class="right">
           <div class="info">
             <div class="contact">
@@ -54,47 +68,49 @@
               <a href="#">Sign Up</a>
             </div>
           </div>
-          <div class="nav-items">
-            <ul>
-              <li>
-                <a href="./index.html" class="active">Home</a>
+          <div class="nav-items collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a  class="nav-link active" href="./index.html" class="active">Home</a>
                 <!-- <img src="./images/down-arrow.png" alt="" /> -->
               </li>
-              <li>
-                <a href="./about.html">Company</a
+              <li class="nav-item">
+                <a  class="nav-link" href="./about.html">Company</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
-              <li>
-                <a href="./services.html">Products & Services</a
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Products & Services</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
-              <li>
-                <a href="./esg.html">Esg</a><img src="./images/down-arrow.png" alt="" />
+              <li class="nav-item">
+                <a class="nav-link" href="./esg.html">Esg</a><img src="./images/down-arrow.png" alt="" />
               </li>
-              <li>
-                <a href="./media.html">Media</a
+              <li class="nav-item">
+                <a class="nav-link" href="./media.html">Media</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
-              <li>
-                <a href="./knowledge.html">Knowledge</a
+              <li class="nav-item">
+                <a class="nav-link" href="./knowledge.html">Knowledge</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
-              <li>
-                <a href="./contact.html">Contact</a
+              <li class="nav-item">
+                <a  class="nav-link" href="./contact.html">Contact</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
-              <li>
-                <a href="./download.html">Download Center</a
+              <li class="nav-item">
+                <a class="nav-link" href="./download.html">Download Center</a
                 ><img src="./images/down-arrow.png" alt="" />
               </li>
             </ul>
           </div>
         </div>
       </div>
+      </div>
+      
     </header>
     <!-- ----------------------header end----------------------------- -->
     <!-- -----------------solutions section start------------ -->
-    <section>
+    <section class="container-fluid">
       <div class="solutions">
         <div class="content">
           <div class="left">
@@ -190,7 +206,7 @@
     <!-- --------solutions section end--------------------- -->
     <!-- -----------------products section start -------------- -->
 
-    <section class="products">
+    <section class="products container-fluid">
       <div class="content">
         <h2>Products</h2>
         <h1>Welcome to Navitas Solar</h1>
@@ -252,7 +268,7 @@
 
     <!-- ----------------products section end------------------- -->
     <!-- -------------------blue section start------------- -->
-    <section class="blue">
+    <section class="blue container-fluid">
       <div
         id="carouselExampleDark"
         class="carousel slide"
@@ -384,7 +400,7 @@
     </section>
     <!-- -------------------------blue section end--------------------- -->
     <!-- -------------------------services section start----------------------- -->
-    <section class="services">
+    <section class="services container-fluid">
       <div class="content">
         <div class="col1">
           <h2>Services</h2>
@@ -419,6 +435,18 @@
           <div class="img">
             <img src="./images/service-img-01.png" alt="" />
           </div>
+          <div class="arrow">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+              <g clip-path="url(#clip0_196_1899)">
+                <path d="M13.004 7.89998L5.44907 0.347609C5.11757 0.0169429 4.58048 0.0169429 4.24814 0.347609C3.91664 0.678275 3.91664 1.21536 4.24814 1.54603L11.2038 8.49916L4.24898 15.4523C3.91747 15.7829 3.91747 16.32 4.24898 16.6515C4.58048 16.9822 5.1184 16.9822 5.44991 16.6515L13.0048 9.09917C13.3313 8.77192 13.3313 8.22639 13.004 7.89998Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_196_1899">
+                  <rect width="16.8" height="16.8" fill="white" transform="translate(0.499512 0.0996094)"/>
+                </clipPath>
+              </defs>
+            </svg></a>
+          </div>
         </div>
         <div class="col2">
           <div class="data">
@@ -437,12 +465,24 @@
           <div class="img">
             <img src="./images/service-img-02.png" alt="" />
           </div>
+          <div class="arrow">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+              <g clip-path="url(#clip0_196_1899)">
+                <path d="M13.004 7.89998L5.44907 0.347609C5.11757 0.0169429 4.58048 0.0169429 4.24814 0.347609C3.91664 0.678275 3.91664 1.21536 4.24814 1.54603L11.2038 8.49916L4.24898 15.4523C3.91747 15.7829 3.91747 16.32 4.24898 16.6515C4.58048 16.9822 5.1184 16.9822 5.44991 16.6515L13.0048 9.09917C13.3313 8.77192 13.3313 8.22639 13.004 7.89998Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_196_1899">
+                  <rect width="16.8" height="16.8" fill="white" transform="translate(0.499512 0.0996094)"/>
+                </clipPath>
+              </defs>
+            </svg></a>
+          </div>
         </div>
       </div>
     </section>
     <!-- -------------------------services section end-------------------------- -->
     <!-- -------------------------blue-projects section start---------------------- -->
-    <section class="blue-projects">
+    <section class="blue-projects container-fluid">
       <div class="content">
         <h2>EPC & RESCO</h2>
         <h1>Notable Projects</h1>
@@ -524,7 +564,7 @@
     </section>
     <!-- -------------------------blue-projects section end---------------------- -->
     <!-- ------------------------updates section start---------------------- -->
-    <section class="updates">
+    <section class="updates container-fluid">
       <div class="content">
         <h2>Updates</h2>
         <h1>News & Events</h1>
@@ -579,7 +619,7 @@
     </section>
     <!-- ---------------------------updates section end--------------------- -->
     <!-- ----------------articles section start------------------ -->
-    <section class="article">
+    <section class="article container-fluid">
       <div class="content">
         <h2>Updates</h2>
         <h1>Articles</h1>
@@ -614,7 +654,7 @@
 
     <!-- ---------------------------articles section end----------------- -->
     <!-- -------------------------awards section start-------------------- -->
-    <section class="awards">
+    <section class="awards container-fluid">
       <div class="content">
         <h2>Our Achievements</h2>
         <h1>Awards & Recognitions</h1>
@@ -675,7 +715,7 @@
     </section>
     <!-- ---------------------awards section end--------------------- -->
     <!-- ---------------------contact-us section start------------------ -->
-    <section class="contact-us">
+    <section class="contact-us container-fluid">
       <div class="content">
         <div class="left">
           <div class="img">
@@ -772,7 +812,7 @@
     </section>
     <!-- ---------------------contact-us section end------------------ -->
     <!-- ------------------------------puc section start---------------- -->
-    <section class="puc">
+    <section class="puc container-fluid">
       <div class="content">
         <h2>Projects</h2>
         <h1>PUC & Government</h1>
@@ -800,8 +840,8 @@
     </section>
     <!-- -------------------------puc section end------------------------- -->
     <!-- ----------------------footer srart-------------------------------------- -->
-    <footer>
-      <div class="content">
+    <footer class="container-fluid">
+      <div class="content container-fluid">
         <div class="top">
           <div class="partA">
             <div class="logo">
